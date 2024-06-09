@@ -27,7 +27,7 @@ setInterval(() => {
     .tz(selectedOption[optionsIndex].text)
     .format("a");
 }, 1000);
-
+  
 createBtn.onclick = function addClockWithTimeZone() {
   // document.querySelector(".time_piece").innerHTML = `
   //   <div class ="container">
@@ -57,11 +57,11 @@ createBtn.onclick = function addClockWithTimeZone() {
   //       <div id = "ampm">AM</div>
   //     </div>
   //   </div>`;
-  if (selectedOption.options.length > 0) {
+  
     output.innerHTML = moment
       .tz(selectedOption[optionsIndex].text)
       .format("hh:mm:ss");
-  } else {
-    console.log("select your region and try again");
-  }
+  
+
+  
 };
